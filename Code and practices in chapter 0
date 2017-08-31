@@ -1,0 +1,31 @@
+
+/* Code in chapter 0 */
+
+
+// a small C++ program
+
+#include <iostream>
+
+int main()
+{
+  std::cout << "Hello, world!" << std::endl;
+  return 0;
+}
+
+
+
+
+
+/* Practices in chapter 0 */
+
+// #2
+std::cout << "This (\") is a quote, and this (\\) is a backslash" << std::endl:
+
+// #3
+std:: cout << "int main()/n"
+           << "{"
+           << "  std::cout << "Hello, world!" << std::endl;
+           << "  return 0;"
+           << "}"
+           << std::endl;
+           
