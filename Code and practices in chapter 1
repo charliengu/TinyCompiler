@@ -40,13 +40,13 @@ int main()
   std::string name;
   std::cin >> name;
   
-  //blild the message and lines that we intend to write
+  // blild the message and lines that we intend to write
   const std::string greeting = "Hello, " + name + "!";
   const std::string spaces(greeting.size(), '*');
   const std::string second_line = "* " + space + " *";
   const std::string first_line(second_line.size(), '*');
   
-  //write it all
+  // write it all
   std::cout << std::endl;
   std::cout << first_line  << std::endl;
   std::cout << second_line << std::endl;
