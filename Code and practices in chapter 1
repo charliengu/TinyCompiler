@@ -42,7 +42,7 @@ int main()
   
   // blild the message and lines that we intend to write
   const std::string greeting = "Hello, " + name + "!";
-  const std::string spaces(greeting.size(), '*');
+  const std::string spaces(greeting.size(), ' ');
   const std::string second_line = "* " + space + " *";
   const std::string first_line(second_line.size(), '*');
   
