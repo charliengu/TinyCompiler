@@ -36,8 +36,7 @@ std:: cout << "int main()/n"
            << "}"
            << std::endl;
 
-// #10 
-
+// #10
 #include <iostream>
 int main()
 {
