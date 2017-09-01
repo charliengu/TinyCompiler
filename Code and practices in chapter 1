@@ -1,0 +1,79 @@
+/*************
+Good good study, day day up.
+Date:2017.9.1
+**************/
+
+
+
+/****************
+Code in chapter 1
+change a little bit
+*****************/
+
+// Ex1: ask for a person's name, and greet the person
+#include <iostream>
+#include <string>
+
+int main()
+{
+  // ask for the person's name
+  std::cout << "Please enter your name: " << std::endl;
+  
+  // read the name
+  std::string name; // define name
+  std::cin >> name; // read into name
+  
+  // write a greeting
+  std::cout << "Hello, " << name << "!" << std::endl;
+  return 0;
+}
+
+
+// Ex2: ask for a person's name, and generate a framed greeting
+#include <iostream>
+#include <string>
+
+int main()
+{
+  // read the name
+  std::cout << "Please enter your name: ";
+  std::string name;
+  std::cin >> name;
+  
+  //blild the message and lines that we intend to write
+  const std::string greeting = "Hello, " + name + "!";
+  const std::string spaces(greeting.size(), '*');
+  const std::string second_line = "* " + space + " *";
+  const std::string first_line(second_line.size(), '*');
+  
+  //write it all
+  std::cout << std::endl;
+  std::cout << first_line  << std::endl;
+  std::cout << second_line << std::endl;
+  std::cout << "* " + greeting + " *" << std::endl;
+  std::cout << second_line << std::endl;
+  std::cout << first_line  << std::endl;
+  
+  return 0;
+}
+
+
+
+/*********************
+Practices in chapter 1
+**********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
