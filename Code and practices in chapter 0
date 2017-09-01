@@ -1,11 +1,16 @@
+/*************
+Good good study, day day up.
+Date:2017.9.1
+**************/
 
-/* Code in chapter 0 */
 
+
+/****************
+Code in chapter 0
+*****************/
 
 // a small C++ program
-
 #include <iostream>
-
 int main()
 {
   std::cout << "Hello, world!" << std::endl;
@@ -16,16 +21,26 @@ int main()
 
 
 
-/* Practices in chapter 0 */
+/*********************
+Practices in chapter 0
+**********************/
 
 // #2
 std::cout << "This (\") is a quote, and this (\\) is a backslash" << std::endl:
 
-// #3
+// #4
 std:: cout << "int main()/n"
            << "{"
-           << "  std::cout << "Hello, world!" << std::endl;
+           << "  std::cout << \"Hello, world!\" << std::endl;"
            << "  return 0;"
            << "}"
            << std::endl;
-           
+
+// #10 
+
+#include <iostream>
+int main()
+{
+  std::cout << "Hello,/nworld!" << std::endl;
+  return 0;
+}
