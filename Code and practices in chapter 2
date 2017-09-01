@@ -6,13 +6,58 @@ Date:2017.9.1
 
 
 /****************
-Code in chapter 2
+Code in chapter 2 ...changed a little
 *****************/
+
+#include <iostream>
+#include <string>
+
+int main()
+{
+  // read the name
+  std::cout << "Please enter your first name: "
+  std::string name;
+  std::cin >> name;
+  
+  // build the message that we intend to write
+  const int number_of_blanks_surrounding_the_greeting = 1;
+  const int number_of_rows = number_of_blanks_surrounding_the_greeting*2 + 3;
+  const std::string::size_type number_of_cols = name.size() + number_of_blanks_surrounding_the_greeting*2 + 2;
+  
+  // seperate the output from the input
+  std::cout << std::endl;
+  
+  // write it all
+  for (int r = 0; r != number_of_rows; r++) { // invariant: we have written r rows so far
+    std::string::size_type c = 0; // invariant: we have written c characters so far in the current row
+    while (c != number_of_cols){
+      if (r==0 || r==number_of_rows-1 || c==0 || c==number_of_cols-1){
+        std::cout << "*";
+        c++;
+      } else if (r==number_of_blanks_surrounding_the_greeting+1 && c==number_of_blanks_surrounding_the_greeting+1){
+        std::cout << greeting;
+        c += greeting.size();
+      } else {
+        std::cout << " ";
+        c++;
+      }
+    }
+    
+    // seperate the else from the outpur
+    std::cout << std::endl;
+  }
+  return 0;
+}
 
 
 
 /*********************
 Practices in chapter 2
 **********************/
+
+
+
+
+
 
 
