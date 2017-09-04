@@ -12,7 +12,7 @@ vector<string> split(const string& s) {
     }
     // find j: 
     string_size j = i;
-    while (j != s.size() && isspace(s[j])) {
+    while (j != s.size() && ！isspace(s[j])) {
       j++
     }
     // if we found some nonwhitespace characters, copy them
