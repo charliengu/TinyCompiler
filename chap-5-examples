@@ -27,7 +27,7 @@ vector<string> split(const string& s) {
 
 
 
-// 5.8 链接字符串
+// 5.8 连接字符串
 
 string::size_type width(const vector<string>& v) {
   string::size_type maxlen = 0;
