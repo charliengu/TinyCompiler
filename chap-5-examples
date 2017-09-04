@@ -1,0 +1,26 @@
+vector<string> split(const string& s) {
+  vector<string> ret;
+  typedef string::size_type string_size;
+  string_size i = 0;
+  
+  // 通过计算索引i，j对单词进行定位，每个单词是[i,j)之间的字符
+  
+  while（i != s.size()）{
+    // find i: ignore leading blanks
+    while (i != s.size() && isspace(s[i])){
+      i++;
+    }
+    // find j: 
+    string_size j = i;
+    while (j != s.size() && isspace(s[j])) {
+      j++
+    }
+    // if wh found some nonwhitespace characters, copy them
+    if (i != j) {
+      ret.push_back(s.substr(i, j-i);
+      i = j;
+    }
+  }
+
+  return ret;
+}
