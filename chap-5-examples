@@ -15,12 +15,16 @@ vector<string> split(const string& s) {
     while (j != s.size() && isspace(s[j])) {
       j++
     }
-    // if wh found some nonwhitespace characters, copy them
+    // if we found some nonwhitespace characters, copy them
     if (i != j) {
       ret.push_back(s.substr(i, j-i);
       i = j;
     }
   }
-
   return ret;
 }
+
+
+
+
+
