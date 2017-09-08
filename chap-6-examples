@@ -63,19 +63,23 @@ vecto<string> find_urls(const string& s){
 
 string::const_iterator 
 url_begin(string::const_iterator b, string::const_iterator e) {
-
+  
 }
 
 
 string::const_iterator
 url_end(string::const_iterator b, string::const_iterator e) {
-  
+  return find_if(b, e, not_url_char);
 }
 
 
-
-
-
+bool not_url_char(char c){
+  // characters that can appear in a URL
+  static const string url_ch = "-;/?:@=&$-_.+!*'(),";
+  // see whether c can appear in a URL and return the negative
+  return !(isalnum(c) || find(url_ch.begin(), url_ch.end(), c));
+  // 使用 !isalnum(c) && !find(url_ch.begin(), url_ch.end(), c) 会更易理解吗？
+}
 
 
 
